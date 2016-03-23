@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Youtube Stop Button Enabler
 // @namespace    https://github.com/mattman00000
-// @version      0.0.1
+// @version      0.0.2
 // @description  try to take over the world!
 // @author       mattman00000
-// @match        https://www.youtube.com/*
+// @match        *://www.youtube.com/*
 // @grant        none
 // ==/UserScript==
 
