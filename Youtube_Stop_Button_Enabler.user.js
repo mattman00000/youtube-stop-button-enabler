@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name               Youtube Stop Button Enabler
 // @namespace          https://github.com/mattman00000
-// @version            0.0.5.2
+// @version            0.0.5.3
 // @description        stop playback with keyboard stop button or F7
 // @match              *://www.youtube.com/*
 // @grant              none
@@ -11,7 +11,7 @@
 // @connect            *
 // @author             Matthew James Burnham <mattman00000@gmail.com>
 // @downloadURL        https://github.com/mattman00000/youtube-stop-button-enabler/raw/master/Youtube_Stop_Button_Enabler.user.js
-// @updateURL          https://github.com/mattman00000/youtube-stop-button-enabler/raw/master/Youtube_Stop_Button_Enabler.user.js
+// @updateURL          http://github.com/mattman00000/youtube-stop-button-enabler/raw/master/Youtube_Stop_Button_Enabler.user.js
 // @supportURL         https://github.com/mattman00000/youtube-stop-button-enabler/issues
 // @homepageURL        https://github.com/mattman00000/userscripts
 // @contributionURL    https://github.com/mattman00000/userscripts
