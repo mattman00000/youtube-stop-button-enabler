@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name               Youtube Stop Button Enabler
 // @namespace          https://github.com/mattman00000
-// @version            0.0.5.5
+// @version            0.0.5.6
 // @description        stop playback with keyboard stop button or F7
 // @match              *://www.youtube.com/*
 // @grant              none
@@ -46,9 +46,11 @@
 	{
 		console.debug("window keydown");
 		console.debug(a);
+		//TODO implement user mutable configs
 		var stopKeys = [
 			"MediaStop",
-			"F7"
+			"F7",
+			"F10"
 		];
 		if (stopKeys.includes(a.key))
 		{
