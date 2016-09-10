@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name               Youtube Stop Button Enabler
 // @namespace          https://github.com/mattman00000
-// @version            0.0.5.7
+// @version            0.0.5.8
 // @description        stop playback with keyboard stop button or F7
 // @match              *://www.youtube.com/*
 // @grant              none
@@ -57,18 +57,25 @@
 			var alertMsg = "Stop Key Pressed";
 			var textBorder = 5;
 			console.error("\r\n"+((("█".repeat(alertMsg.length+(textBorder*2))+"\r\n").repeat(2))+"█".repeat(textBorder)+alertMsg+"█".repeat(textBorder)+"\r\n"+(("█".repeat(alertMsg.length+(textBorder*2))+"\r\n").repeat(2)))+"\r\n");
-			document.getElementsByTagName("video")[0].pause();
+			for (var i = 0; i < document.getElementsByTagName("video").length; i++)
+			{
+				document.getElementsByTagName("video")[i].pause();
+			}
 		}
 	}
 	);
 	var reps = 0;
 	var fuckYouTube = window.setInterval(function(){
 		reps++;
-		document.getElementsByTagName("video")[0].pause();
+		console.warn("fuckYouTube "+reps);
+		for (var i = 0; i < document.getElementsByTagName("video").length; i++)
+		{
+			document.getElementsByTagName("video")[i].pause();
+		}
 		if (reps >= 50)
 		{
 			window.clearInterval(fuckYouTube);
-			}
+		}
 	},100);
 	//USERSCRIPT END
 }
